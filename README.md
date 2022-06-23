@@ -1,2 +1,3 @@
 # Analyse de la tendance de vidéos sur YOUTUBE
-    $ stramlit run main.py
+    $ pip install -r requirements.txt
+    $ streamlit run main.py

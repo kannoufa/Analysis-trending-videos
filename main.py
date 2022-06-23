@@ -1,5 +1,4 @@
 import streamlit as st
-from AnalyseData import AnalyseData
 from exploreData import exploreData
 from prepareDeta import prepareData
 
@@ -40,15 +39,12 @@ st.sidebar.write("### Options")
 option = st.sidebar.radio(
      "Choisir une option",
      ('Exploration du jeu de données',
-      'Préparation du jeu de données',
-      'Commencer l\'analyse'))
+      'Préparation et analyse du jeu de données'))
 
 if option == 'Exploration du jeu de données':
     exploreData(nom_pays)
-elif option == 'Préparation du jeu de données':
+elif option == 'Préparation et analyse du jeu de données':
     prepareData(nom_pays)
-else:
-    AnalyseData(nom_pays)
 
 
 
